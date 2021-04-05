@@ -1,8 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
+import './EightBall';
+import EightBall from './EightBall';
 
 function App() {
-  return <h1>React 8Ball</h1>;
+  return <EightBall />;
 }
 
 export default App;
