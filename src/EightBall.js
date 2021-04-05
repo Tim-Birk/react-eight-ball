@@ -7,9 +7,18 @@ const EightBall = ({ answers }) => {
     color: 'black',
   });
 
+  const handleClick = () => {
+    const randNum = Math.floor(Math.random() * answers.length);
+    return setAnswer(answers[randNum]);
+  };
+
   return (
     <div className='EightBall'>
-      <div className='EightBall-ball' style={{ backgroundColor: answer.color }}>
+      <div
+        className='EightBall-ball'
+        style={{ backgroundColor: answer.color }}
+        onClick={handleClick}
+      >
         <p className='EightBall-text'>{answer.msg}</p>
       </div>
     </div>

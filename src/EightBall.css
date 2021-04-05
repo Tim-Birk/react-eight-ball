@@ -17,4 +17,5 @@
 .EightBall-text {
   color: #fff;
   font-weight: bold;
+  user-select: none;
 }
